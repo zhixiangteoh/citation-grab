@@ -12,11 +12,13 @@ class Search extends React.Component {
   };
 
   componentDidMount() {
-    this.onFormSubmit();
+    this.onFormSubmit(new Event("submit"));
   }
 
   onFormSubmit = async (event) => {
-    if (event) event.preventDefault();
+    event.preventDefault();
+
+    this.setState({ searches: null });
 
     const sch_response = await serp.get("/search", {
       params: {
@@ -43,9 +45,20 @@ class Search extends React.Component {
     return cit_response.data.citations;
   };
 
+  renderResults() {
+    if (!this.state.searches) return <h2>Loading...</h2>;
+
+    return (
+      <Accordion
+        searches={this.state.searches}
+        getCitations={this.getCitations}
+      />
+    );
+  }
+
   render() {
     return (
-      <form className="ui form" onSubmit={this.onFormSubmit}>
+      <form ref={this.formRef} className="ui form" onSubmit={this.onFormSubmit}>
         <div className="field">
           <label>Search citations</label>
           <div className="ui icon input">
@@ -57,10 +70,7 @@ class Search extends React.Component {
             />
             <i className="search icon" />
           </div>
-          <Accordion
-            searches={this.state.searches}
-            getCitations={this.getCitations}
-          />
+          {this.renderResults()}
         </div>
       </form>
     );
