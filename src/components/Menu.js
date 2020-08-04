@@ -11,7 +11,7 @@ const Menu = () => {
         style={{ width: "100%", height: "auto" }}
         alt="Citation Grab logo"
       /> */}
-      <div className="ui fluid two item stackable labeled icon menu inverted">
+      <div className="ui fluid two item stackable labeled icon inverted menu">
         <Link to="/" className="item">
           <img
             style={{ width: "30px", height: "auto", paddingBottom: "10px" }}
