@@ -12,7 +12,7 @@ const Menu = () => {
         alt="Citation Grab logo"
       /> */}
       <div className="ui fluid two item stackable labeled icon menu inverted">
-        <Link to="/" className="item">
+        <Link to="/citation-grab/" className="item">
           <img
             style={{ width: "30px", height: "auto", paddingBottom: "10px" }}
             src={appLogo}
@@ -20,7 +20,7 @@ const Menu = () => {
           />
           Search
         </Link>
-        <Link to="/list" className="item">
+        <Link to="/citation-grab/list" className="item">
           <i className="list icon" />
           List
         </Link>
