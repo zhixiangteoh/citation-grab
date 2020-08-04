@@ -10,8 +10,8 @@ class App extends React.Component {
       <div className="ui container">
         <BrowserRouter>
           <Menu />
-          <Route path="/citation-grab/" exact component={Search} />
-          <Route path="/citation-grab/list" exact component={List} />
+          <Route path="/" exact component={Search} />
+          <Route path="/list" exact component={List} />
         </BrowserRouter>
       </div>
     );
