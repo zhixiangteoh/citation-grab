@@ -7,10 +7,7 @@ const Accordion = (props) => {
   const inputRef = useRef(null);
 
   const copyToClipboard = async (event) => {
-    const response = await navigator.clipboard.writeText(
-      inputRef.current.value
-    );
-    if (!response) window.clipboardData.setData("Text", inputRef.current.value);
+    await navigator.clipboard.writeText(inputRef.current.value);
   };
 
   const onTitleClick = async (selectedSearch) => {
@@ -47,6 +44,7 @@ const Accordion = (props) => {
               value={citation.snippet}
               readOnly
               style={{ maxWidth: "70%" }}
+              onFocus={(e) => e.target.select()}
             />
           </form>
         </div>
