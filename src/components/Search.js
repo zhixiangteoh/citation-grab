@@ -58,21 +58,27 @@ class Search extends React.Component {
 
   render() {
     return (
-      <form ref={this.formRef} className="ui form" onSubmit={this.onFormSubmit}>
-        <div className="field">
-          <label>Search citations</label>
-          <div className="ui icon input">
-            <input
-              type="text"
-              value={this.state.value}
-              placeholder="Example: Functional Programming"
-              onChange={(e) => this.setState({ value: e.target.value })}
-            />
-            <i className="search icon" />
+      <div>
+        <form
+          ref={this.formRef}
+          className="ui form"
+          onSubmit={this.onFormSubmit}
+        >
+          <div className="field">
+            <label>Search citations</label>
+            <div className="ui icon input">
+              <input
+                type="text"
+                value={this.state.value}
+                placeholder="Example: Functional Programming"
+                onChange={(e) => this.setState({ value: e.target.value })}
+              />
+              <i className="search icon" />
+            </div>
           </div>
-          {this.renderResults()}
-        </div>
-      </form>
+        </form>
+        {this.renderResults()}
+      </div>
     );
   }
 }

@@ -38,12 +38,12 @@ const Accordion = (props) => {
           <div className="content">
             <div className="header">{citation.title}</div>
           </div>
-          <form>
+          <form className="ui form">
             <input
               ref={inputRef}
               value={citation.snippet}
               readOnly
-              style={{ maxWidth: "80%" }}
+              style={{ maxWidth: "70%" }}
             />
           </form>
         </div>
