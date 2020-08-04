@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/citation-grab/static/js/main.fa54fdad.chunk.js",
-    "main.js.map": "/citation-grab/static/js/main.fa54fdad.chunk.js.map",
+    "main.js": "/citation-grab/static/js/main.ae2578f0.chunk.js",
+    "main.js.map": "/citation-grab/static/js/main.ae2578f0.chunk.js.map",
     "runtime-main.js": "/citation-grab/static/js/runtime-main.2009604e.js",
     "runtime-main.js.map": "/citation-grab/static/js/runtime-main.2009604e.js.map",
     "static/js/2.fb499d71.chunk.js": "/citation-grab/static/js/2.fb499d71.chunk.js",
     "static/js/2.fb499d71.chunk.js.map": "/citation-grab/static/js/2.fb499d71.chunk.js.map",
     "index.html": "/citation-grab/index.html",
-    "precache-manifest.b33fcd1faa805f9274530781fc764fe2.js": "/citation-grab/precache-manifest.b33fcd1faa805f9274530781fc764fe2.js",
+    "precache-manifest.e4e0f49dc60edadea5efa7f227dda163.js": "/citation-grab/precache-manifest.e4e0f49dc60edadea5efa7f227dda163.js",
     "service-worker.js": "/citation-grab/service-worker.js",
     "static/js/2.fb499d71.chunk.js.LICENSE.txt": "/citation-grab/static/js/2.fb499d71.chunk.js.LICENSE.txt",
     "static/media/logo512.png": "/citation-grab/static/media/logo512.e9fd17e6.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.2009604e.js",
     "static/js/2.fb499d71.chunk.js",
-    "static/js/main.fa54fdad.chunk.js"
+    "static/js/main.ae2578f0.chunk.js"
   ]
 }
