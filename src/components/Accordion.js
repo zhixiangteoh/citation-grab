@@ -7,7 +7,10 @@ const Accordion = (props) => {
   const inputRef = useRef(null);
 
   const copyToClipboard = async (event) => {
-    await navigator.clipboard.writeText(inputRef.current.value);
+    const response = await navigator.clipboard.writeText(
+      inputRef.current.value
+    );
+    if (!response) window.clipboardData.setData("Text", inputRef.current.value);
   };
 
   const onTitleClick = async (selectedSearch) => {
